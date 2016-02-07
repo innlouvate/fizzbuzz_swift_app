@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var game : Game?
+    var gameScore: Int?
+    let brain: Brain
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        gameScore = 0
+        game = Game()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+        
+    func play(move: String) -> (right: Bool, score: Int) {
+        let result = brain.check(score + 1)
+        
+        if result == move {
+            score++
+            return (true, score)
+        } else {
+            return (false, score)
+        }
+    }
 
 }
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAA9DD0AFA2390FE5E52DD64EB1EAD5255002B33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "01A32202784697C16170AF773378DCD8694E5E51" : 0,
+    "FAA9DD0AFA2390FE5E52DD64EB1EAD5255002B33" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1044AB63-ECA8-496E-B3C8-219543E62F29",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "01A32202784697C16170AF773378DCD8694E5E51" : "..\/..",
+    "FAA9DD0AFA2390FE5E52DD64EB1EAD5255002B33" : "FizzBuzz\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FizzBuzz",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FizzBuzz.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/innlouvate\/test_new_shop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "01A32202784697C16170AF773378DCD8694E5E51"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/innlouvate\/fizzbuzz_swift_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAA9DD0AFA2390FE5E52DD64EB1EAD5255002B33"
+    }
+  ]
+}

@@ -15,6 +15,9 @@
 		E850BE1E1C63D3C2006E7B65 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE1D1C63D3C2006E7B65 /* FizzBuzzUITests.swift */; };
 		E850BE2C1C63D4EA006E7B65 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE2B1C63D4EA006E7B65 /* BrainTests.swift */; };
 		E850BE2E1C63D63C006E7B65 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE2D1C63D63C006E7B65 /* Brain.swift */; };
+		E850BE301C63E6C7006E7B65 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE2F1C63E6C7006E7B65 /* GameTests.swift */; };
+		E850BE321C63E737006E7B65 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE311C63E737006E7B65 /* Game.swift */; };
+		E85443191C67CED30020536F /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85443181C67CED30020536F /* ViewControllerUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E850BE1F1C63D3C2006E7B65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E850BE2B1C63D4EA006E7B65 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
 		E850BE2D1C63D63C006E7B65 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		E850BE2F1C63E6C7006E7B65 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		E850BE311C63E737006E7B65 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E85443181C67CED30020536F /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 				E850BE061C63D3C2006E7B65 /* LaunchScreen.storyboard */,
 				E850BE091C63D3C2006E7B65 /* Info.plist */,
 				E850BE2D1C63D63C006E7B65 /* Brain.swift */,
+				E850BE311C63E737006E7B65 /* Game.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -115,6 +122,8 @@
 			children = (
 				E850BE141C63D3C2006E7B65 /* Info.plist */,
 				E850BE2B1C63D4EA006E7B65 /* BrainTests.swift */,
+				E850BE2F1C63E6C7006E7B65 /* GameTests.swift */,
+				E85443181C67CED30020536F /* ViewControllerUnitTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -262,6 +271,7 @@
 				E850BE001C63D3C2006E7B65 /* ViewController.swift in Sources */,
 				E850BE2E1C63D63C006E7B65 /* Brain.swift in Sources */,
 				E850BDFE1C63D3C2006E7B65 /* AppDelegate.swift in Sources */,
+				E850BE321C63E737006E7B65 /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E850BE2C1C63D4EA006E7B65 /* BrainTests.swift in Sources */,
+				E850BE301C63E6C7006E7B65 /* GameTests.swift in Sources */,
+				E85443191C67CED30020536F /* ViewControllerUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +503,7 @@
 				E850BE241C63D3C2006E7B65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E850BE251C63D3C2006E7B65 /* Build configuration list for PBXNativeTarget "FizzBuzzTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +512,7 @@
 				E850BE271C63D3C2006E7B65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E850BE281C63D3C2006E7B65 /* Build configuration list for PBXNativeTarget "FizzBuzzUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +521,7 @@
 				E850BE2A1C63D3C2006E7B65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
