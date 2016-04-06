@@ -7,33 +7,59 @@
 //
 
 import UIKit
-
+    
 class ViewController: UIViewController {
     
     var game : Game?
     var gameScore: Int?
-    let brain: Brain
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameScore = 0
         game = Game()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-        
-    func play(move: String) -> (right: Bool, score: Int) {
-        let result = brain.check(score + 1)
-        
-        if result == move {
-            score++
-            return (true, score)
-        } else {
-            return (false, score)
+    
+    func play(move: String) {
+        guard let unwrappedGame = game else {
+            print("Game is nil!")
+            return
         }
+        
+        let response = unwrappedGame.play(move)
+        gameScore = response.score
     }
-
+    
+    
+    
 }
+    
+//    var game : Game?
+//    var gameScore: Int?
+//    let brain: Brain
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        gameScore = 0
+//        game = Game()
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//    }
+//        
+//    func play(move: String) -> (right: Bool, score: Int) {
+//        let result = brain.check(score + 1)
+//        
+//        if result == move {
+//            score++
+//            return (true, score)
+//        } else {
+//            return (false, score)
+//        }
+//    }
+
+//}
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -55,7 +56,6 @@
                                         <state key="normal" image="champagne" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTG-aw-Kn2">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -63,7 +63,6 @@
                                         <state key="normal" image="space" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-hf-uIT">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -71,7 +70,6 @@
                                         <state key="normal" image="lightning" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <variation key="heightClass=regular"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -121,6 +119,15 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="tnI-PU-Cc3"/>
+                                        <exclude reference="6fS-4C-z81"/>
+                                        <exclude reference="hKL-UF-mUW"/>
+                                        <exclude reference="jbl-8v-bro"/>
+                                        <exclude reference="yql-Y1-vsz"/>
+                                        <exclude reference="2gD-Gy-R2O"/>
+                                        <exclude reference="84T-Oo-pks"/>
+                                        <exclude reference="Ngv-S6-5or"/>
+                                        <exclude reference="afA-aD-y51"/>
+                                        <exclude reference="mbX-nm-YAu"/>
                                         <exclude reference="SJI-WG-y9O"/>
                                         <exclude reference="d6N-h8-JZQ"/>
                                         <exclude reference="gfu-Vq-niA"/>
@@ -130,15 +137,6 @@
                                         <exclude reference="UHd-7x-v7m"/>
                                         <exclude reference="YOW-mV-ZWR"/>
                                         <exclude reference="jTz-uc-VTw"/>
-                                        <exclude reference="2gD-Gy-R2O"/>
-                                        <exclude reference="84T-Oo-pks"/>
-                                        <exclude reference="Ngv-S6-5or"/>
-                                        <exclude reference="afA-aD-y51"/>
-                                        <exclude reference="mbX-nm-YAu"/>
-                                        <exclude reference="6fS-4C-z81"/>
-                                        <exclude reference="hKL-UF-mUW"/>
-                                        <exclude reference="jbl-8v-bro"/>
-                                        <exclude reference="yql-Y1-vsz"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular">
@@ -150,6 +148,15 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="tnI-PU-Cc3"/>
+                                        <include reference="6fS-4C-z81"/>
+                                        <include reference="hKL-UF-mUW"/>
+                                        <include reference="jbl-8v-bro"/>
+                                        <include reference="yql-Y1-vsz"/>
+                                        <exclude reference="2gD-Gy-R2O"/>
+                                        <include reference="84T-Oo-pks"/>
+                                        <include reference="Ngv-S6-5or"/>
+                                        <include reference="afA-aD-y51"/>
+                                        <include reference="mbX-nm-YAu"/>
                                         <include reference="SJI-WG-y9O"/>
                                         <include reference="d6N-h8-JZQ"/>
                                         <include reference="gfu-Vq-niA"/>
@@ -159,15 +166,6 @@
                                         <include reference="UHd-7x-v7m"/>
                                         <include reference="YOW-mV-ZWR"/>
                                         <include reference="jTz-uc-VTw"/>
-                                        <exclude reference="2gD-Gy-R2O"/>
-                                        <include reference="84T-Oo-pks"/>
-                                        <include reference="Ngv-S6-5or"/>
-                                        <include reference="afA-aD-y51"/>
-                                        <include reference="mbX-nm-YAu"/>
-                                        <include reference="6fS-4C-z81"/>
-                                        <include reference="hKL-UF-mUW"/>
-                                        <include reference="jbl-8v-bro"/>
-                                        <include reference="yql-Y1-vsz"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -198,13 +196,13 @@
                                 <exclude reference="6tI-ug-nDy"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FfB-K7-0Kl"/>
-                                <exclude reference="Foh-eF-noV"/>
-                                <exclude reference="mrw-VQ-IBE"/>
                                 <exclude reference="0ot-Ru-7gk"/>
                                 <exclude reference="2qK-zW-VOU"/>
                                 <exclude reference="HdJ-Sr-aJd"/>
                                 <exclude reference="NpK-uw-HYr"/>
+                                <exclude reference="FfB-K7-0Kl"/>
+                                <exclude reference="Foh-eF-noV"/>
+                                <exclude reference="mrw-VQ-IBE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -212,13 +210,13 @@
                                 <include reference="6tI-ug-nDy"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FfB-K7-0Kl"/>
-                                <include reference="Foh-eF-noV"/>
-                                <include reference="mrw-VQ-IBE"/>
                                 <exclude reference="0ot-Ru-7gk"/>
                                 <exclude reference="2qK-zW-VOU"/>
                                 <exclude reference="HdJ-Sr-aJd"/>
                                 <exclude reference="NpK-uw-HYr"/>
+                                <include reference="FfB-K7-0Kl"/>
+                                <include reference="Foh-eF-noV"/>
+                                <include reference="mrw-VQ-IBE"/>
                             </mask>
                         </variation>
                     </view>

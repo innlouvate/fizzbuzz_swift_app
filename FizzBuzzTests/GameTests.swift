@@ -30,7 +30,7 @@ class GameTests: XCTestCase {
         let response = game.play("1")
         XCTAssertNotNil(response.score)
     }
-    
+        
     func testGameStartsAtZero() {
         XCTAssertTrue(game.score == 0)
     }
@@ -39,7 +39,7 @@ class GameTests: XCTestCase {
         game.play("1")
         XCTAssertTrue(game.score == 1)
     }
-    
+        
     func testIfMoveIsRight() {
         game.score = 2
         let response = game.play("Fizz")

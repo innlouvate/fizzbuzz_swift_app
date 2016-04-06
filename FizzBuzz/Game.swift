@@ -19,14 +19,16 @@ class Game: NSObject {
         super.init()
     }
     
-    func play(move: String) -> Bool {
-        let result = brain.check(score+1)
+
+    
+    func play(move: String) -> (right: Bool, score: Int) {
+        let result = brain.check(score + 1)
         
         if result == move {
             score++
-            return true
+            return (true, score)
         } else {
-            return false
+            return (false, score)
         }
     }
     
