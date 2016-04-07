@@ -21,11 +21,11 @@ class Game: NSObject {
     
 
     
-    func play(move: String) -> (right: Bool, score: Int) {
+    func play(move: Move) -> (right: Bool, score: Int) {
         let result = brain.check(score + 1)
         
         if result == move {
-            score++
+            score += 1
             return (true, score)
         } else {
             return (false, score)

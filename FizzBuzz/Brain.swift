@@ -27,15 +27,15 @@ class Brain: NSObject {
         return number % divisor == 0
     }
     
-    func check(num: Int) -> String {
-        if isDivisibleByFifteen(num) {
-            return "FizzBuzz"
-        } else if isDivisibleByThree(num) {
-            return "Fizz"
-        } else if isDivisibleByFive(num) {
-            return "Buzz"
+    func check(number: Int) -> Move {
+        if isDivisibleByFifteen(number) {
+            return Move.FizzBuzz
+        } else if isDivisibleByThree(number) {
+            return Move.Fizz
+        } else if isDivisibleByFive(number){
+            return Move.Buzz
         } else {
-            return String(num)
+            return Move.Number
         }
     }
     

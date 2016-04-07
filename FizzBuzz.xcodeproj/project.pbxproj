@@ -18,6 +18,8 @@
 		E850BE301C63E6C7006E7B65 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE2F1C63E6C7006E7B65 /* GameTests.swift */; };
 		E850BE321C63E737006E7B65 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850BE311C63E737006E7B65 /* Game.swift */; };
 		E85443191C67CED30020536F /* ViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85443181C67CED30020536F /* ViewControllerUnitTests.swift */; };
+		E88CB15F1CB59ADB00057FC1 /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88CB15E1CB59ADB00057FC1 /* ViewControllerUITests.swift */; };
+		E88CB1631CB69DD300057FC1 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88CB1621CB69DD300057FC1 /* Move.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E850BE2F1C63E6C7006E7B65 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		E850BE311C63E737006E7B65 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E85443181C67CED30020536F /* ViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		E88CB15E1CB59ADB00057FC1 /* ViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		E88CB1621CB69DD300057FC1 /* Move.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				E850BE091C63D3C2006E7B65 /* Info.plist */,
 				E850BE2D1C63D63C006E7B65 /* Brain.swift */,
 				E850BE311C63E737006E7B65 /* Game.swift */,
+				E88CB1621CB69DD300057FC1 /* Move.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			children = (
 				E850BE1D1C63D3C2006E7B65 /* FizzBuzzUITests.swift */,
 				E850BE1F1C63D3C2006E7B65 /* Info.plist */,
+				E88CB15E1CB59ADB00057FC1 /* ViewControllerUITests.swift */,
 			);
 			path = FizzBuzzUITests;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 				TargetAttributes = {
 					E850BDF91C63D3C1006E7B65 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 976V7MCB6U;
 					};
 					E850BE0D1C63D3C2006E7B65 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -268,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88CB1631CB69DD300057FC1 /* Move.swift in Sources */,
 				E850BE001C63D3C2006E7B65 /* ViewController.swift in Sources */,
 				E850BE2E1C63D63C006E7B65 /* Brain.swift in Sources */,
 				E850BDFE1C63D3C2006E7B65 /* AppDelegate.swift in Sources */,
@@ -289,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88CB15F1CB59ADB00057FC1 /* ViewControllerUITests.swift in Sources */,
 				E850BE1E1C63D3C2006E7B65 /* FizzBuzzUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lou.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +438,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FizzBuzz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Lou.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

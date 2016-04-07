@@ -11,18 +11,35 @@ import UIKit
 class ViewController: UIViewController {
     
     var game : Game?
-    var gameScore: Int?
+    var gameScore: Int? {
+        didSet {
+            guard let unwrappedScore = gameScore else {
+                print("gameScore is nil")
+                return
+            }
+            numberButton.setTitle("\(unwrappedScore)", forState: .Normal)
+        }
+    }
     
+    @IBOutlet weak var numberButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         game = Game()
+        
+        guard let checkedGame = game else {
+            print("Game is nil")
+            return
+        }
+        
+        gameScore = checkedGame.score
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func play(move: String) {
+    func play(move: Move) {
         guard let unwrappedGame = game else {
             print("Game is nil!")
             return
@@ -32,34 +49,15 @@ class ViewController: UIViewController {
         gameScore = response.score
     }
     
+    @IBAction func buttonTapped(sender: UIButton) {
+        guard let unwrappedScore = gameScore else {
+            print("Game score is nil")
+            return
+        }
+        
+        let nextScore = unwrappedScore + 1
+        play("\(nextScore)")
+    }
     
     
 }
-    
-//    var game : Game?
-//    var gameScore: Int?
-//    let brain: Brain
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        gameScore = 0
-//        game = Game()
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//    }
-//        
-//    func play(move: String) -> (right: Bool, score: Int) {
-//        let result = brain.check(score + 1)
-//        
-//        if result == move {
-//            score++
-//            return (true, score)
-//        } else {
-//            return (false, score)
-//        }
-//    }
-
-//}
-
