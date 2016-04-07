@@ -44,7 +44,6 @@ class ViewController: UIViewController {
             print("Game is nil!")
             return
         }
-        
         let response = unwrappedGame.play(move)
         gameScore = response.score
     }
@@ -56,8 +55,7 @@ class ViewController: UIViewController {
         }
         
         let nextScore = unwrappedScore + 1
-        play("\(nextScore)")
+        play(Move.Number)
     }
-    
     
 }
